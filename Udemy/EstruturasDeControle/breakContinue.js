@@ -5,11 +5,11 @@ for (x in nums) {
         break
     }
     console.log(`${x} = ${nums[x]}`)
-}
+} //o break quebra o laço, para fora do block mais próximo
 
 for (y in nums) {
     if (y==5){
         continue
     }
     console.log(`${y} = ${nums[y]}`)
-}
+} // o continue gera o código até este ponto, e depois o pula.
