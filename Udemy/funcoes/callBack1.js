@@ -6,6 +6,8 @@ function imprimir(nome, indice) {
 
 
 fabricantes.forEach(imprimir)
+
+
 fabricantes.forEach(function (fabricante) {
     console.log(fabricante)
     //em arrow = fabricantes.forEach(fabricante => console.log(fabricante)
