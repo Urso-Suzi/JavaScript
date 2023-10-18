@@ -5,7 +5,7 @@ function Carro(velocidadeMaxima = 200, delta = 5){
     //metodo publico
     this.acelerar = function() {
         if(velocidadeAtual + delta <= velocidadeMaxima) {
-            velocidadeMaxima += delta
+            velocidadeAtual += delta
         } else {
             velocidadeAtual = velocidadeMaxima
         }
@@ -20,3 +20,11 @@ function Carro(velocidadeMaxima = 200, delta = 5){
 const uno = new Carro
 uno.acelerar()
 console.log(uno.getVelocidadeAtual())
+
+const ferrari = new Carro (320, 60)
+ferrari.acelerar()
+ferrari.acelerar()
+console.log(ferrari.getVelocidadeAtual())
+
+//console.log(velocidadeAtual)
+
