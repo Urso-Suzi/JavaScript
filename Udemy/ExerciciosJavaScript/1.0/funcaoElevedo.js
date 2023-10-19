@@ -1,4 +1,4 @@
-const elevador = function (base = 0, expoente = 0){
+/**const elevador = function (base = 0, expoente = 0){
 
     this.base = base
     this.expoente = expoente
@@ -11,7 +11,21 @@ const elevador = function (base = 0, expoente = 0){
 
     
 
+    }
+     const p1 = new elevador(3, 2)
+
+p1.elevado()
+**/
+
+
+
+function expoente (base, expoente) {
+   // let resultado = Math.pow(base, expoente)
+
+    resultado = base ** expoente
+
+    return resultado
 }
 
-const p1 = new elevador(3, 2)
-p1.elevado()
+
+console.log(expoente(2, 3))
