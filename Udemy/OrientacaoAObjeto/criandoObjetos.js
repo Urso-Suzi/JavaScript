@@ -46,3 +46,15 @@ const f1 = criarFuncionario('João', 7980, 4)
 const f2 = criarFuncionario('Maria', 11400, 1)
 
 console.log(f1.getSalario(), f2.getSalario())
+
+
+//Oject.creat
+
+const filha = Object.create(null)
+filha.nome = 'Ana'
+console.log(filha)
+
+//Função famosa que retorna Objeto
+
+const fromJSON = JSON.parse('{"info": "Sou um JASON"}')
+console.log(fromJSON.info)
