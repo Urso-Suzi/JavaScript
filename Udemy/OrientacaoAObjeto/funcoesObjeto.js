@@ -29,3 +29,7 @@ const a1 = {b: 2}
 const a2 = {c:3, a:4}
 
 const obj = Object.assign(dest, a1, a2)
+
+Object.freeze(obj)
+obj.c = 1234
+console.log(obj)
