@@ -1,3 +1,6 @@
 module.exports = {
-    bomDia = 'Ola',
+    bomDia: 'Ola',
+    boaNoite () {
+        return 'Boa Noite'
+    }
 }
