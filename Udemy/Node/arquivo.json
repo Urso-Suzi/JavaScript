@@ -1,8 +1,9 @@
 {
-    "db":{
+    "db" : {
         "host": "localhost",
-        "porta": 5432,
+        "port": 5432,
         "user": "usuario",
-        "senha": 1223456
+        "pass": "123456",
+        "dono": "Pedro"
     }
 }
