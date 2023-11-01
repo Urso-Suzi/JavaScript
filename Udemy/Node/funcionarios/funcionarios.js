@@ -5,11 +5,14 @@ axios.get(url).then(response => {
     let funcionarios = response.data
 
     const pais = func => func.pais == 'China'
-    const genero = func => func.genero == 'M'
+    const genero = func => func.genero == 'F'
+    const menorSalario = (func, funcAtual) => {
+        return func.salario < funcAtual.salario ? func : funcAtual
+    } 
   
-   const funcChinesas = funcionarios.filter(pais).filter(genero)
+   const funcChinesas = funcionarios.filter(pais).filter(genero).reduce(menorSalario)
 
-    console.log(funcChinesas.sort())
+    console.log(funcChinesas)
    
 })
 
