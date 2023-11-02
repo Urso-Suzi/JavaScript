@@ -14,4 +14,9 @@ fs.readFile(caminho, 'UTF-8', (err, conteudo) => {
 
 
 const config = require('./arquivo.json')
-console.log(config)
+console.log(config.db.host)
+
+fs.readdir(__dirname, (err, arquivos) => { //dirname, representa sempre o repertorio atual
+    console.log('Conteúdo da pasta')
+    console.log(arquivos)
+})
