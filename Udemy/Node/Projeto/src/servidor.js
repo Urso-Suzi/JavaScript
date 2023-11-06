@@ -34,7 +34,7 @@ app.put('/produtos/:id', (req, res, next) => {
 } )
 
 app.delete('/produtos/:id', (req, res, next) => {
-    const produto =  bancoDeDados.excluirProduto(req.params.id)
+    const produto = bancoDeDados.excluirProduto(req.params.id)
     res.send(produto) 
 } )
 

@@ -16,13 +16,13 @@ function getProduto(id) {
 }
 
 function getProdutos() {
-    return Object.values(produtos) || 'Não existem produtos cadastrados'
+    return Object.values(produtos)
 }
 
 function excluirProduto(id) {
     const produto = produtos[id]
-    delete produto[id]
+    delete produtos[id]
     return produto
 }
 
-module.exports = {salvarProduto, getProduto, getProdutos,excluirProduto}
+module.exports = {salvarProduto, getProduto, getProdutos, excluirProduto}
