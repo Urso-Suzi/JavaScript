@@ -1,5 +1,5 @@
 const sequence = {
-    id: 1,
+    _id: 1,
     get id() {return this._id++}
 }
 
@@ -16,7 +16,13 @@ function getProduto(id) {
 }
 
 function getProdutos() {
-    return Object.values(produtos)
+    return Object.values(produtos) || 'Não existem produtos cadastrados'
 }
 
-module.exports = {salvarProduto, getProduto, getProdutos}
+function excluirProduto(id) {
+    const produto = produtos[id]
+    delete produto[id]
+    return produto
+}
+
+module.exports = {salvarProduto, getProduto, getProdutos,excluirProduto}
