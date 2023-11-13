@@ -19,14 +19,13 @@ const getTurma = (letra, callback) => {
 
 let nome = []
 getTurma('A', alunos => {
-    nomes = nome.concat(alunos.map(a => `A: ${a.nome}`))
-    console.log(nomes)
-    getTurma('B', alunos => {
-        nomes = nome.concat(alunos.map(a => `B ${a.nome}`))
-        console.log(nomes)
-    })
-    getTurma('C', alunos => {
-        nomes = nome.concat(alunos.map(a => `C: ${a.nome}`))
-        console.log(nomes)
-    })
+    nomes = alunos.map(a =>a.nome)
+    id = alunos.map(a => a.id)
+
+    final = nome.concat(nomes, [id])
+
+    console.log(final)
+
+    
+   
 })
