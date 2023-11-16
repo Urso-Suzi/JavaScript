@@ -1,7 +1,3 @@
-let a = 1 
-console.log(a)
-
-
 let p = new Promise(function (cumprirPromessa) {
     cumprirPromessa(
         [
@@ -10,11 +6,14 @@ let p = new Promise(function (cumprirPromessa) {
     )
 })
 
+const primeiroElemento = arrayOuString => arrayOuString[0]
+const letraMinuscula = letra => letra.toLowerCase()
+
 p
-.then(valor => valor[1])
-.then(primeiro => primeiro[0])
-.then(letra => letra.toLowerCase())
-.then(letraMinuscula => console.log(letraMinuscula))
+.then(primeiroElemento)
+.then(primeiroElemento)
+.then(letraMinuscula)
+.then(console.log)
 
 p
 .then(valor => valor[3])
