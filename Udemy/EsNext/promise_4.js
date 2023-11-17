@@ -23,10 +23,12 @@ function gerarVariosNumeros() {
         gerarNumerosEntre(1, 60, 3000),
         gerarNumerosEntre(1, 60, 100),
         gerarNumerosEntre(1, 60, 1500)
-
-
     ])
 }
 
-
-gerarVariosNumeros().then(numeros => console.log(numeros))
+console.time('promise')
+gerarVariosNumeros()
+    .then(console.log)
+    .then(() => {
+        console.timeEnd('promise')
+    })
