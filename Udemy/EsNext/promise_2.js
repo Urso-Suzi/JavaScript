@@ -12,3 +12,4 @@ function Esperarpor(tempo = 2000) {
 Esperarpor()
     .then(() => Esperarpor())
     .then(() => Esperarpor())
+    .then(console.log)
