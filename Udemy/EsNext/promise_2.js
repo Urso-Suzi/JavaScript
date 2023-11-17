@@ -9,4 +9,6 @@ function Esperarpor(tempo = 2000) {
 
 
 
-let p = Esperarpor(3000).then(texto => console.log(texto))
+Esperarpor()
+    .then(() => Esperarpor())
+    .then(() => Esperarpor())
