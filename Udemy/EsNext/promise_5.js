@@ -15,7 +15,7 @@ function funcionarOuNao(valor, chanceDeErro) {
 }
 
 
-funcionarOuNao('Testando...', 0.9)
+funcionarOuNao('Testando...', 0.1)
     .then(v => console.log(`Valor: ${v}`))
     .then(
         v => consol.log(v),
